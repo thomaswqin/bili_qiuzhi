@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="本周 GitHub 热门项目推荐：从 AI Agent、OCR、音乐播放器、操作系统文档、推理优化到硬件可视化。"
+    >
+    <title>本周 GitHub 热门项目推荐 | Thomas Qin</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="../index.html#top" aria-label="Thomas Qin home">
+        <span class="brand-mark">TQ</span>
+        <span>Thomas Qin</span>
+      </a>
+      <nav class="nav-links" aria-label="Site navigation">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#gallery">Gallery</a>
+        <a href="../index.html#blog">Blog</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="article-shell">
+      <article class="article">
+        <header class="article-header">
+          <p class="eyebrow">GitHub Radar / 2026-07-07</p>
+          <h1>本周 GitHub 热门项目推荐</h1>
+          <p class="article-lede">
+            这周的 GitHub 热门项目里，AI 依然很强势。但如果只看 AI
+            coding agent，很快就会有点同质化。所以这篇我特意把主题拉开：
+            有 AI Agent、OCR、前端音乐播放器、操作系统文档、推理优化，
+            也有创意硬件项目。
+          </p>
+        </header>
+
+        <section class="article-section">
+          <h2>1. Ponytail：给 AI coding agent 加一点克制感</h2>
+          <p>
+            Ponytail 是一个给 AI coding agent 用的规则和提示项目。它不是要让
+            AI 更疯狂地写代码，而是提醒它先判断：这段代码真的需要改吗，有没有
+            更小的改法，有没有可能根本不用写新东西。
+          </p>
+          <p>
+            它适合经常用 Claude Code、Cursor、Codex 这类工具的人，尤其适合
+            维护老项目、修小 bug、做小范围重构的时候用。上手难度不高，但你需要
+            知道自己的 agent 工具怎么加载规则；如果只是复制粘贴，不理解它背后
+            “少写、少动、少过度设计”的思路，效果会打折。
+          </p>
+          <p>
+            项目地址：
+            <a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noreferrer">
+              github.com/DietrichGebert/ponytail
+            </a>
+          </p>
+        </section>
+
+        <section class="article-section">
+          <h2>2. Unlimited-OCR：把复杂文档变成可处理的数据</h2>
+          <p>
+            Unlimited-OCR 是百度开源的 OCR 项目，重点不只是识别几行字，而是处理
+            更长、更复杂的文档页面。它适合 PDF、扫描件、报告、论文、票据这类
+            原本很难结构化的资料。
+          </p>
+          <p>
+            如果你是数据分析师、研究人员，或者在咨询、金融、法律等场景里经常
+            处理大量文档，这类工具会很有用。难点主要在环境、模型依赖和文档质量：
+            页面越复杂、扫描越模糊，越需要你自己调参数和做后处理。
+          </p>
+          <p>
+            项目地址：
+            <a href="https://github.com/baidu/Unlimited-OCR" target="_blank" rel="noreferrer">
+              github.com/baidu/Unlimited-OCR
+            </a>
+          </p>
+        </section>
+
+        <section class="article-section">
+          <h2>3. Mineradio：一个有舞台感的音乐播放器</h2>
+          <p>
+            Mineradio 是一个沉浸式音乐播放器，主打电影镜头、粒子视觉和歌词舞台。
+            它不像传统播放器那样只解决“播放音乐”的问题，更像是把听歌这件事做成
+            一个可视化空间。
+          </p>
+          <p>
+            它适合前端开发者、交互设计师，或者想做个人作品集项目的人参考。用起来
+            的难点主要在前端环境和视觉性能；如果想二次开发，还要懂一点动画、音频
+            播放和响应式布局。
+          </p>
+          <p>
+            项目地址：
+            <a href="https://github.com/XxHuberrr/Mineradio" target="_blank" rel="noreferrer">
+              github.com/XxHuberrr/Mineradio
+            </a>
+          </p>
+        </section>
+
+        <section class="article-section">
+          <h2>4. Astrid OS Book：不是应用，是一本系统设计手册</h2>
+          <p>
+            Astrid OS Book 是 Astrid OS 的规范参考文档，内容包括 kernel、capsules、
+            host ABI、bus 和安全模型。它不是那种下载下来马上运行的软件，更像一本
+            写给系统工程爱好者看的设计书。
+          </p>
+          <p>
+            它适合喜欢操作系统、内核、运行时、安全边界的人，尤其适合在学习 OS
+            架构或设计实验系统时翻一翻。难点也很直接：它偏理论和架构，不适合
+            想马上跑一个 demo 的人，需要一定底层基础才读得顺。
+          </p>
+          <p>
+            项目地址：
+            <a href="https://github.com/unicity-astrid/book" target="_blank" rel="noreferrer">
+              github.com/unicity-astrid/book
+            </a>
+          </p>
+        </section>
+
+        <section class="article-section">
+          <h2>5. DeepSpec：让大模型推理更快、更便宜</h2>
+          <p>
+            DeepSpec 是 DeepSeek 开源的 speculative decoding 项目，关注的是如何
+            加速大模型推理。简单说，它不是直接提升模型“会不会回答”，而是研究模型
+            服务时的速度、延迟和成本。
+          </p>
+          <p>
+            它适合做 LLM 部署、推理优化、模型系统工程的人，尤其是在调用成本和响应
+            时间已经成为瓶颈的时候。上手难度偏高，需要理解 LLM 推理流程、
+            speculative decoding，以及相关训练和评测方法。
+          </p>
+          <p>
+            项目地址：
+            <a href="https://github.com/deepseek-ai/DeepSpec" target="_blank" rel="noreferrer">
+              github.com/deepseek-ai/DeepSpec
+            </a>
+          </p>
+        </section>
+
+        <section class="article-section">
+          <h2>6. Oomwoo：开源扫地机器人项目</h2>
+          <p>
+            Oomwoo 是一个开源扫地机器人项目，方向很不一样：它把热门榜从纯软件
+            拉回到了现实世界里的机器。对很多开发者来说，这类项目有趣的地方在于
+            代码、传感器、机械结构和实际环境会一起影响结果。
+          </p>
+          <p>
+            它适合喜欢机器人、嵌入式、自动化硬件的人，也适合想做家用设备实验的
+            maker。难度主要在硬件准备和调试；相比网页项目，它更容易遇到传感器、
+            电机、供电、外壳结构这些现实问题。
+          </p>
+          <p>
+            项目地址：
+            <a href="https://github.com/makerspet/oomwoo" target="_blank" rel="noreferrer">
+              github.com/makerspet/oomwoo
+            </a>
+          </p>
+        </section>
+
+        <section class="article-section">
+          <h2>7. Skylight：把头顶飞过的飞机投到天花板上</h2>
+          <p>
+            Skylight 是这批项目里最有生活想象力的一个。它用 RTL-SDR 接收飞机信号，
+            然后把经过头顶的飞机实时投影到天花板上，还会叠加太阳、月亮、星空和
+            ISS 等天空信息。
+          </p>
+          <p>
+            它适合喜欢无线电、航班追踪、树莓派、实时可视化和创意装置的人。难度
+            主要在硬件准备和空间调试：你需要 RTL-SDR、投影设备，还要处理信号接收、
+            定位和显示效果，不是纯软件项目那么即开即用。
+          </p>
+          <p>
+            项目地址：
+            <a href="https://github.com/cpaczek/skylight" target="_blank" rel="noreferrer">
+              github.com/cpaczek/skylight
+            </a>
+          </p>
+        </section>
+
+        <footer class="article-footer">
+          <p>
+            如果只想快速尝鲜，可以先看 Ponytail 和 Mineradio；如果你做数据或文档
+            处理，Unlimited-OCR 更实用；如果你关心底层系统和模型性能，Astrid OS
+            Book 与 DeepSpec 值得慢慢读。GitHub 热门榜有时候会很吵，但把主题分开看，
+            还是能看到不少真正有意思的东西。
+          </p>
+          <a class="button primary" href="../index.html#blog">Back to Blog</a>
+        </footer>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Thomas Qin</span>
+      <span>Data Scientist / 数据科学家</span>
+    </footer>
+  </body>
+</html>
